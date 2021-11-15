@@ -51,7 +51,11 @@ class PdoGsb{
  * test de modification d'un fichier du projet 
 */
 	public function getInfosVisiteur($login, $mdp){
+<<<<<<< HEAD
+		//comment test 1
+=======
 		// ceci est un commentaire commenté par le commentateur de commentaire commenté.
+>>>>>>> b6f5b76951f2aa0a62d95c68f975d4240b99cf0c
 		// $req = "select visiteur.id as id, visiteur.nom as nom, visiteur.prenom as prenom from visiteur 
 		// where visiteur.login='$login' and visiteur.mdp='$mdp'";
 		// $rs = PdoGsb::$monPdo->query($req);
