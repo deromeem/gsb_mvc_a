@@ -48,6 +48,7 @@ class PdoGsb{
  * @param $login 
  * @param $mdp
  * @return l'id, le nom et le prénom sous la forme d'un tableau associatif 
+ * test modifier un fichier
 */
 	public function getInfosVisiteur($login, $mdp){
 		// $req = "select visiteur.id as id, visiteur.nom as nom, visiteur.prenom as prenom from visiteur 
