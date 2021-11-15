@@ -50,10 +50,15 @@ class PdoGsb{
  * @return l'id, le nom et le prénom sous la forme d'un tableau associatif 
 */
 	public function getInfosVisiteur($login, $mdp){
+<<<<<<< HEAD
 		//comment test 1
+=======
+		// ceci est un commentaire commenté par le commentateur de commentaire commenté.
+>>>>>>> b6f5b76951f2aa0a62d95c68f975d4240b99cf0c
 		// $req = "select visiteur.id as id, visiteur.nom as nom, visiteur.prenom as prenom from visiteur 
 		// where visiteur.login='$login' and visiteur.mdp='$mdp'";
 		// $rs = PdoGsb::$monPdo->query($req);
+		// la fonction getInfosVisiteur permet d'obtenir à la fois le mot de passe ainsi que le login du visiteur.
 
 		echo('getInfoV : ' . $mdp);    // DEBUG
 		
@@ -63,6 +68,7 @@ class PdoGsb{
 		$rs->bindValue(':login', $login, PDO::PARAM_STR);
 		$rs->bindValue(':mdp', $mdp, PDO::PARAM_STR);
 		$rs->execute();
+		
 
 		$ligne = $rs->fetch();
 		return $ligne;
