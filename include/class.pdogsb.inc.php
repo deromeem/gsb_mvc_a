@@ -49,8 +49,17 @@ class PdoGsb{
  * @param $mdp
  * @return l'id, le nom et le prénom sous la forme d'un tableau associatif 
 */
+<<<<<<< HEAD
 	public function getInfosVisiteur($login, $mdp){ 
 		// Méthode permettant de récupérer les infos d'un visiteur
+=======
+	public function getInfosVisiteur($login, $mdp){
+<<<<<<< HEAD
+		//comment test 1
+=======
+		// ceci est un commentaire commenté par le commentateur de commentaire commenté.
+>>>>>>> b6f5b76951f2aa0a62d95c68f975d4240b99cf0c
+>>>>>>> edb9b2f7847157ffc73e1d2447abd77327f250d4
 		// $req = "select visiteur.id as id, visiteur.nom as nom, visiteur.prenom as prenom from visiteur 
 		// where visiteur.login='$login' and visiteur.mdp='$mdp'";
 		// $rs = PdoGsb::$monPdo->query($req);
