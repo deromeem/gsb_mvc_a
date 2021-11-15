@@ -63,6 +63,7 @@ class PdoGsb{
 		$rs->bindValue(':login', $login, PDO::PARAM_STR);
 		$rs->bindValue(':mdp', $mdp, PDO::PARAM_STR);
 		$rs->execute();
+		
 
 		$ligne = $rs->fetch();
 		return $ligne;
