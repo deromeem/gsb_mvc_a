@@ -56,6 +56,9 @@ class PdoGsb{
 =======
 	public function getInfosVisiteur($login, $mdp){
 <<<<<<< HEAD
+		// test
+=======
+<<<<<<< HEAD
 		//comment test 1
 =======
 		// ceci est un commentaire commenté par le commentateur de commentaire commenté.
