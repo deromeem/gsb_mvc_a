@@ -54,6 +54,7 @@ class PdoGsb{
 		// $req = "select visiteur.id as id, visiteur.nom as nom, visiteur.prenom as prenom from visiteur 
 		// where visiteur.login='$login' and visiteur.mdp='$mdp'";
 		// $rs = PdoGsb::$monPdo->query($req);
+		// la fonction getInfosVisiteur permet d'obtenir à la fois le mot de passe ainsi que le login du visiteur.
 
 		echo('getInfoV : ' . $mdp);    // DEBUG
 		
@@ -63,6 +64,7 @@ class PdoGsb{
 		$rs->bindValue(':login', $login, PDO::PARAM_STR);
 		$rs->bindValue(':mdp', $mdp, PDO::PARAM_STR);
 		$rs->execute();
+		
 
 		$ligne = $rs->fetch();
 		return $ligne;
